@@ -20,8 +20,8 @@ export default function Home() {
       </div>
       <div className="w-full my-10 flex justify-center">
         <VideoPlayer
-          videoSrc="images/Video/VideoHorizontal.mp4" // Asegúrate de que esta ruta sea correcta
-          captionsSrc="/videos/" // Asegúrate de que esta ruta sea correcta
+          videoSrc="images/Video/VideoHorizontal.mp4"
+          captionsSrc="/videos/"
           controls
           autoplay={true}
           preload="none"
