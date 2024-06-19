@@ -11,7 +11,7 @@ const TabComponent = () => {
         role="tablist"
       >
         <div className="w-full p-4 bg-gray-50 dark:bg-gray-700 text-lg font-bold">
-          Sobre Megacentro Internacional Visión
+          Sobre Megacentro Internacional de la Visión
         </div>
       </div>
       <div
