@@ -4,10 +4,14 @@ import Image from "next/image";
 
 const Product = () => {
   return (
-    <div className="flex w-full">
-      <Card className="xl:w-[40%] w-[70%] py-5 shadow-2xl">
-        <CardContent className="flex flex-col w-full">
-          <Image className="w-full" src={image1} alt="product-img" />
+    <div className="flex w-full justify-center">
+      <Card className="w-full lg:w-[70%] py-5 shadow-2xl flex flex-row">
+        <Image
+          className="w-1/2 h-full object-cover"
+          src={image1}
+          alt="product-img"
+        />
+        <CardContent className="flex flex-col w-1/2 p-5">
           <p className="lg:text-xl text-base text-start">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

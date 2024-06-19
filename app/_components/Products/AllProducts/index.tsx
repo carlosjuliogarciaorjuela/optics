@@ -22,7 +22,7 @@ const otherProducts = [
 
 const AllProducts = () => {
   return (
-    <div className="grid h-72  lg:h-[400px] xl:h-[500px] w-[70%] lg:w-[40%] gap-10 grid-cols-2">
+    <div className="grid h-72 lg:h-[400px] xl:h-[500px] w-[70%] gap-10 grid-cols-2 mt-10">
       {otherProducts.map((product, index) => (
         <div
           key={index}

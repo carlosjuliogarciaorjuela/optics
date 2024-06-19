@@ -27,14 +27,12 @@ export default function Home() {
           preload="none"
         />
       </div>
-      <div className="flex flex-col pl-40">
-        <p className="text-3xl text-center self-center mb-10 font-bold">
+      <div className="flex flex-col items-center">
+        <p className="text-3xl text-center mb-10 font-bold">
           Nuestros productos
         </p>
-        <div className="flex flex-col lg:flex-row md:mb-20 mb-10 gap-10 justify-center items-center">
-          <Product />
-          <AllProducts />
-        </div>
+        <Product />
+        <AllProducts />
       </div>
       <div className="w-full flex justify-center p-8">
         <OrderForm />

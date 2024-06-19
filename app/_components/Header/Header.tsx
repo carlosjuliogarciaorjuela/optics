@@ -18,7 +18,7 @@ const Header: React.FC = () => {
 
   return (
     <header>
-      <nav className="bg-navyblue border-gray-200 px-4 lg:px-0 py-8 dark:bg-gray-800">
+      <nav className="bg-navyblue border-gray-200 px-4 lg:px-0 py-0 dark:bg-gray-800">
         <div className="flex flex-wrap justify-between items-center mx-auto">
           <div className="flex items-center lg:order-1">
             <Link href="/" className="flex items-center">
