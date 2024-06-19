@@ -21,10 +21,9 @@ const images = [
 const CarouselComponent = () => {
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
   return (
-    <div className="w-full flex justify-center">
+    <div className="w-full flex justify-center ">
       <Carousel
         opts={{ loop: true, align: "center" }}
-        // plugins={[plugin.current]}
         className="h-[250px] sm:h-[400px] md:h-[450px] lg:h-[600px] xl:h-[750px] 2xl:h-[850px] w-full"
       >
         <CarouselContent className="flex transition-transform duration-100 ease-in-out">

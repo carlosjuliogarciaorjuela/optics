@@ -1,28 +1,46 @@
-import React from "react";
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import React, { useState } from "react";
 
 const Header: React.FC = () => {
+  const [loginClicked, setLoginClicked] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // Estado para el menú hamburguesa
+
+  const handleLoginClick = () => {
+    setLoginClicked(true);
+  };
+
+  const handleMenuToggle = () => {
+    setMenuOpen(!menuOpen); // Alterna el estado del menú
+  };
+
   return (
     <header>
-      <nav className="bg-navyblue border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
-        <div className="flex flex-wrap justify-between items-center mx-auto ">
-          <Link href="" className="flex items-center">
-            <Image
-              src={"images/LogoVector.svg"}
-              className="mr-3 h-6 sm:h-9"
-              alt="LogoVision"
-              width={100}
-              height={100}
-            />
-            <span className="hidden lg:block self-center text-xl font-semibold whitespace-nowrap text-white">
-              Megacentro Internacional de la Visión
-            </span>
-          </Link>
-          <div className="flex items-center justify-center lg:order-2">
+      <nav className="bg-navyblue border-gray-200 px-4 lg:px-0 py-8 dark:bg-gray-800">
+        <div className="flex flex-wrap justify-between items-center mx-auto">
+          <div className="flex items-center lg:order-1">
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/images/LogoVector.svg"
+                className="h-6 sm:h-8"
+                alt="LogoVision"
+                width={100}
+                height={100}
+              />
+              <span className="hidden sm:block lg:block self-center text-sm sm:text-sm md:text-md lg:text-lg font-semibold whitespace-nowrap text-white lg:mr-2">
+                Megacentro Internacional de la Visión
+              </span>
+            </Link>
+          </div>
+          <div className="flex items-center justify-center lg:order-3">
             <Link
               href="#"
-              className="text-white dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+              onClick={handleLoginClick}
+              className={`text-white dark:text-white focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800 ${
+                loginClicked ? "bg-primary-800" : "bg-primary-700"
+              }`}
             >
               Log in
             </Link>
@@ -33,15 +51,15 @@ const Header: React.FC = () => {
               Get started
             </Link>
             <button
-              data-collapse-toggle="mobile-menu-2"
+              onClick={handleMenuToggle} // Maneja el clic para alternar el menú
               type="button"
               className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="mobile-menu-2"
-              aria-expanded="false"
+              aria-expanded={menuOpen ? "true" : "false"}
             >
               <span className="sr-only">Open main menu</span>
               <svg
-                className="w-6 h-6"
+                className={`w-6 h-6 ${menuOpen ? "hidden" : "block"}`}
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +71,7 @@ const Header: React.FC = () => {
                 ></path>
               </svg>
               <svg
-                className="hidden w-6 h-6"
+                className={`w-6 h-6 ${menuOpen ? "block" : "hidden"}`}
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -67,10 +85,12 @@ const Header: React.FC = () => {
             </button>
           </div>
           <div
-            className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            className={`${
+              menuOpen ? "flex" : "hidden"
+            } justify-between items-center w-full lg:flex lg:w-auto lg:order-2`}
             id="mobile-menu-2"
           >
-            <div className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+            <div className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-3 lg:mt-0">
               <div>
                 <Link
                   href="#"

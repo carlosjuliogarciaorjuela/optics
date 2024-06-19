@@ -9,17 +9,15 @@ import OrderForm from "@/app/_components/OrderForm/OrderForm";
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
-      <div className="w-full">
+      <div className="w-full p-0">
         <CarouselComponent />
       </div>
-
-      <div>
+      <div className="w-full">
         <TabComponent />
       </div>
       <div className="flex justify-center items-center min-h-screen bg-gray-100">
         <CardContainer />
       </div>
-
       <div className="w-full my-10 flex justify-center">
         <VideoPlayer
           videoSrc="images/Video/VideoHorizontal.mp4" // Asegúrate de que esta ruta sea correcta
@@ -29,7 +27,6 @@ export default function Home() {
           preload="none"
         />
       </div>
-
       <div className="flex flex-col pl-40">
         <p className="text-3xl text-center self-center mb-10 font-bold">
           Nuestros productos

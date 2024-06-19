@@ -4,7 +4,7 @@ import React from "react";
 
 const TabComponent = () => {
   return (
-    <div className="w-screen bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+    <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
       <div
         className="text-sm font-medium text-center text-black divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
         id="fullWidthTab"
