@@ -19,13 +19,7 @@ export default function Home() {
         <CardContainer />
       </div>
       <div className="w-full my-10 flex justify-center">
-        <VideoPlayer
-          videoSrc="VideoHorizontal.mp4"
-          captionsSrc="/video/"
-          controls
-          autoplay={true}
-          preload="none"
-        />
+        <VideoPlayer videoSrc="https://www.youtube.com/embed/R6wcLvotbEI?si=8uC5R5cV2KLqyQM9" />
       </div>
       <div className="flex flex-col items-center">
         <p className="text-3xl text-center mb-10 font-bold">

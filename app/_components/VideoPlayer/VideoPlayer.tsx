@@ -1,40 +1,21 @@
-/// src/components/VideoPlayer.tsx
+// src/components/VideoPlayer.tsx
 import React from "react";
 
 interface VideoPlayerProps {
   videoSrc: string;
-  captionsSrc?: string;
-  controls?: boolean;
-  autoplay?: boolean;
-  preload?: "auto" | "metadata" | "none";
 }
 
-const VideoPlayer: React.FC<VideoPlayerProps> = ({
-  videoSrc,
-  captionsSrc,
-  controls = true,
-  autoplay = false,
-  preload = "none",
-}) => {
+const VideoPlayer: React.FC<VideoPlayerProps> = ({ videoSrc }) => {
   return (
-    <div className="flex justify-center items-center w-full h-full">
-      <video
+    <div className="flex justify-center items-center w-full h-80 md:h-96 lg:h-120 xl:h-144 2xl:h-160">
+      <iframe
         className="w-full h-full object-cover rounded-lg shadow-lg"
-        controls={controls}
-        preload={preload}
-        autoPlay={autoplay}
-      >
-        <source src={videoSrc} type="video/mp4" />
-        {captionsSrc && (
-          <track
-            src={captionsSrc}
-            kind="subtitles"
-            srcLang="en"
-            label="English"
-          />
-        )}
-        Your browser does not support the video tag.
-      </video>
+        src={videoSrc}
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
     </div>
   );
 };
