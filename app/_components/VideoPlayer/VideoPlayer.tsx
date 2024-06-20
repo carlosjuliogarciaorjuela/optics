@@ -7,7 +7,7 @@ interface VideoPlayerProps {
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({ videoSrc }) => {
   return (
-    <div className="flex justify-center items-center w-full h-80 md:h-96 lg:h-120 xl:h-144 2xl:h-160">
+    <div className="flex justify-center items-center w-full h-60 md:h-96 lg:h-144 xl:h-160 2xl:h-160">
       <iframe
         className="w-full h-full object-cover rounded-lg shadow-lg"
         src={videoSrc}
