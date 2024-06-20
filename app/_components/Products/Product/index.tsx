@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Product = () => {
   return (
-    <div className="flex w-full justify-center px-4">
-      <Card className="w-full  py-5 shadow-2xl flex flex-col lg:flex-row">
+    <div className="flex w-full justify-center px-2">
+      <Card className="w-full py-5 shadow-2xl flex flex-col lg:flex-row">
         <Image
           className="lg:ml-5 w-full lg:w-1/2 h-full object-cover"
           src={image1}
