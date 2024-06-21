@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import image1 from "../../../../public/images/product01.png";
 import image2 from "../../../../public/images/product02.png";
 import image3 from "../../../../public/images/product03.png";
@@ -10,24 +11,28 @@ const otherProducts = [
     image: image1,
     description: "Breve descripción del Producto 1",
     price: "$19.99",
+    link: "https://36775f-f6.myshopify.com/products/lentes-tipo-1",
   },
   {
     title: "Producto 2",
     image: image2,
     description: "Breve descripción del Producto 2",
     price: "$29.99",
+    link: "https://36775f-f6.myshopify.com/products/lentes-tipo-2",
   },
   {
     title: "Producto 3",
     image: image3,
     description: "Breve descripción del Producto 3",
     price: "$39.99",
+    link: "https://36775f-f6.myshopify.com/products/lentes-tipo-3",
   },
   {
     title: "Producto 4",
     image: image4,
     description: "Breve descripción del Producto 4",
     price: "$49.99",
+    link: "https://36775f-f6.myshopify.com/products/lente-tipo-4",
   },
 ];
 
@@ -49,13 +54,15 @@ const AllProducts = () => {
               />
             </div>
             <h3 className="text-xl font-semibold mb-2">{product.title}</h3>
-            <p className="text-gray-500 text-sm mb-4 ">{product.description}</p>
+            <p className="text-gray-500 text-sm mb-4">{product.description}</p>
             <p className="text-xl font-bold text-gray-900 mb-4">
               {product.price}
             </p>
-            <button className="w-full bg-blue-600 text-white py-2 rounded-lg transition duration-300 ease-in-out hover:bg-blue-700">
-              Add to Cart
-            </button>
+            <Link href={product.link} passHref>
+              <div className="w-full bg-blue-600 text-white py-2 rounded-lg transition duration-300 ease-in-out hover:bg-blue-700 text-center cursor-pointer">
+                Add to Cart
+              </div>
+            </Link>
           </div>
         ))}
       </div>
