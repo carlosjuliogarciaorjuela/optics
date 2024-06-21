@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import Link from "next/link"; // Importa Link de Next.js
+import Link from "next/link";
 
-// Omitir la parte del fetch de datos del producto para simplificar el ejemplo
 const Product = () => {
-  // Estado y efecto para obtener datos del producto (omitiendo para simplificar)
-
   return (
     <div className="flex justify-center w-full px-2 py-8">
       <Card className="w-full max-w-4xl shadow-2xl flex flex-col lg:flex-row rounded-lg overflow-hidden">
@@ -23,14 +20,13 @@ const Product = () => {
             Productos Destacados
           </h2>
           <p className="text-gray-500 mb-4 text-center lg:text-left">
-            Description
+            Descubre nuestra selección de gafas, lentes de contacto y accesorios
+            ópticos de alta calidad. Diseñados para ofrecer comodidad y estilo,
+            perfectos para cualquier ocasión.
           </p>
-          <p className="text-xl font-bold text-gray-900 mb-4 text-center lg:text-left">
-            $0000
-          </p>
-          {/* Utiliza Link para el botón Add to Cart */}
+          {/* Utiliza Link para el botón Ver productos */}
           <Link href="https://36775f-f6.myshopify.com" passHref>
-            <div className="w-full bg-blue-600 text-white py-2 rounded-lg transition duration-300 ease-in-out hover:bg-blue-700">
+            <div className="w-full bg-blue-600 text-white py-2 rounded-lg transition duration-300 ease-in-out hover:bg-blue-700 text-center">
               Ver productos
             </div>
           </Link>
@@ -41,6 +37,7 @@ const Product = () => {
 };
 
 export default Product;
+
 // // components/Product.tsx
 // import { Card, CardContent } from "@/components/ui/card";
 // import Image from "next/image";

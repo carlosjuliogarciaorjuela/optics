@@ -7,31 +7,31 @@ import image4 from "../../../../public/images/product04.png";
 
 const otherProducts = [
   {
-    title: "Producto 1",
+    title: "Lentes Tipo 1",
     image: image1,
     description: "Breve descripción del Producto 1",
-    price: "$19.99",
+    price: "$200.000,00 COP",
     link: "https://36775f-f6.myshopify.com/products/lentes-tipo-1",
   },
   {
-    title: "Producto 2",
+    title: "Lentes Tipo 2",
     image: image2,
     description: "Breve descripción del Producto 2",
-    price: "$29.99",
+    price: "$200.000,00 COP",
     link: "https://36775f-f6.myshopify.com/products/lentes-tipo-2",
   },
   {
-    title: "Producto 3",
+    title: "Lentes Tipo 2",
     image: image3,
     description: "Breve descripción del Producto 3",
-    price: "$39.99",
+    price: "$200.000,00 COP",
     link: "https://36775f-f6.myshopify.com/products/lentes-tipo-3",
   },
   {
-    title: "Producto 4",
+    title: "Lentes Tipo 2",
     image: image4,
     description: "Breve descripción del Producto 4",
-    price: "$49.99",
+    price: "$200.000,00 COP",
     link: "https://36775f-f6.myshopify.com/products/lente-tipo-4",
   },
 ];
@@ -59,7 +59,7 @@ const AllProducts = () => {
               {product.price}
             </p>
             <Link href={product.link} passHref>
-              <div className="w-full bg-blue-600 text-white py-2 rounded-lg transition duration-300 ease-in-out hover:bg-blue-700 text-center cursor-pointer">
+              <div className="w-full bg-blue-600 text-white  py-2 p-2 rounded-lg transition duration-300 ease-in-out hover:bg-blue-700 text-center cursor-pointer">
                 Add to Cart
               </div>
             </Link>
