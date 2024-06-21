@@ -23,19 +23,19 @@ const TabComponent = () => {
           id="vision"
           role="tabpanel"
         >
-          <dl className="grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto text-black sm:grid-cols-3 xl:grid-cols-6 xl:h-80  dark:text-white sm:p-8">
+          <dl className="grid max-w-screen-xl grid-cols-2 gap-3 p-2 mx-auto text-black sm:grid-cols-3 xl:grid-cols-6 xl:h-80  dark:text-white sm:p-8">
             <div className="flex flex-col items-center justify-center">
-              <dt className="mb-2 text-3xl font-extrabold">73M+</dt>
+              <dt className="mb-2 text-3xl font-extrabold">10+</dt>
               <dd className="text-black dark:text-gray-400">Especialistas</dd>
             </div>
             <div className="flex flex-col items-center justify-center">
-              <dt className="mb-2 text-3xl font-extrabold">100M+</dt>
+              <dt className="mb-2 text-3xl font-extrabold">100+</dt>
               <dd className="text-black dark:text-gray-400">
                 Productos disponibles
               </dd>
             </div>
             <div className="flex flex-col items-center justify-center">
-              <dt className="mb-2 text-3xl font-extrabold">1000s</dt>
+              <dt className="mb-2 text-3xl font-extrabold">50</dt>
               <dd className="text-black dark:text-gray-400">
                 Servicios ofrecidos
               </dd>
@@ -53,7 +53,7 @@ const TabComponent = () => {
               </dd>
             </div>
             <div className="flex flex-col items-center justify-center">
-              <dt className="mb-2 text-3xl font-extrabold">4M+</dt>
+              <dt className="mb-2 text-3xl font-extrabold">Regionales</dt>
               <dd className="text-black dark:text-gray-400">
                 Alianzas estratégicas
               </dd>

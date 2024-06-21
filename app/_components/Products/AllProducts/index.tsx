@@ -9,28 +9,28 @@ const otherProducts = [
   {
     title: "Lentes Tipo 1",
     image: image1,
-    description: "Breve descripción del Producto 1",
+    description: "Lente 1",
     price: "$200.000,00 COP",
     link: "https://36775f-f6.myshopify.com/products/lentes-tipo-1",
   },
   {
     title: "Lentes Tipo 2",
     image: image2,
-    description: "Breve descripción del Producto 2",
+    description: "Lente 2",
     price: "$200.000,00 COP",
     link: "https://36775f-f6.myshopify.com/products/lentes-tipo-2",
   },
   {
     title: "Lentes Tipo 2",
     image: image3,
-    description: "Breve descripción del Producto 3",
+    description: "lente 3",
     price: "$200.000,00 COP",
     link: "https://36775f-f6.myshopify.com/products/lentes-tipo-3",
   },
   {
     title: "Lentes Tipo 2",
     image: image4,
-    description: "Breve descripción del Producto 4",
+    description: "lente 4",
     price: "$200.000,00 COP",
     link: "https://36775f-f6.myshopify.com/products/lente-tipo-4",
   },
@@ -60,7 +60,7 @@ const AllProducts = () => {
             </p>
             <Link href={product.link} passHref>
               <div className="w-full bg-blue-600 text-white  py-2 p-2 rounded-lg transition duration-300 ease-in-out hover:bg-blue-700 text-center cursor-pointer">
-                Add to Cart
+                Comprar
               </div>
             </Link>
           </div>

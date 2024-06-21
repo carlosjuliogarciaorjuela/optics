@@ -18,7 +18,7 @@ const Header: React.FC = () => {
 
   return (
     <header>
-      <nav className="bg-navyblue border-gray-200 px-4 lg:px-0 py-0 dark:bg-gray-800">
+      <nav className="bg-navyblue border-gray-200 px-4 py-3 lg:px-0  dark:bg-gray-800">
         <div className="flex flex-wrap justify-between items-center mx-auto">
           <div className="flex items-center lg:order-1">
             <Link href="/" className="flex items-center">
@@ -38,7 +38,7 @@ const Header: React.FC = () => {
             <Link
               href="#"
               onClick={handleLoginClick}
-              className={`text-white dark:text-white focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800 ${
+              className={`text-white dark:text-white focus:ring-4 focus:ring-gray-300 rounded-lg font-medium  text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800 ${
                 loginClicked ? "bg-primary-800" : "bg-primary-700"
               }`}
             >
@@ -94,7 +94,7 @@ const Header: React.FC = () => {
               <div>
                 <Link
                   href="#"
-                  className="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+                  className="block py-2 pr-4 pl-3 text-white bg-primary-700 focus:ring-4 focus:ring-gray-300 rounded-lg lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
                   aria-current="page"
                 >
                   Inicio
@@ -103,7 +103,7 @@ const Header: React.FC = () => {
               <div>
                 <Link
                   href="#"
-                  className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 pr-4 pl-3 text-white border-gray-100 focus:ring-4 focus:ring-gray-300 rounded-lg lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Compañia
                 </Link>
@@ -111,7 +111,7 @@ const Header: React.FC = () => {
               <div>
                 <Link
                   href="#"
-                  className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 pr-4 pl-3 text-white  border-gray-100 focus:ring-4 focus:ring-gray-300 rounded-lg  lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Tienda Virtual
                 </Link>
@@ -119,7 +119,7 @@ const Header: React.FC = () => {
               <div>
                 <Link
                   href="#"
-                  className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 pr-4 pl-3 text-white focus:ring-4 focus:ring-gray-300 rounded-lg border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Equipo
                 </Link>
@@ -127,7 +127,7 @@ const Header: React.FC = () => {
               <div>
                 <Link
                   href="#"
-                  className="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block py-2 pr-4 pl-3 text-white  border-gray-100 focus:ring-4 focus:ring-gray-300 rounded-lg lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Contacto
                 </Link>
