@@ -32,7 +32,7 @@ const CarouselComponent = () => {
               key={index}
               className="flex-shrink-0 h-[250px] sm:h-[400px] md:h-[450px] lg:h-[600px] xl:h-[750px] 2xl:h-[850px] w-full"
             >
-              <div className="p-2 h-full">
+              <div className=" h-full">
                 <Card className="h-full">
                   <CardContent className="relative h-full w-full flex items-center justify-center">
                     <Image
@@ -40,7 +40,7 @@ const CarouselComponent = () => {
                       alt={`Image ${index + 1}`}
                       layout="fill"
                       objectFit="cover"
-                      className="rounded-lg object-center"
+                      className="object-center"
                     />
                   </CardContent>
                 </Card>

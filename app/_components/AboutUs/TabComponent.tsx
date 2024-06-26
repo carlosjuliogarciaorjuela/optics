@@ -6,11 +6,11 @@ const TabComponent = () => {
   return (
     <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
       <div
-        className="text-sm font-medium text-center text-black divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+        className="text-sm font-medium text-center text-white divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
         id="fullWidthTab"
         role="tablist"
       >
-        <div className="w-full p-4 bg-gray-50 dark:bg-gray-700 text-lg font-bold">
+        <div className="w-full p-4 bg-navyblue dark:bg-navyblue text-lg font-bold">
           Sobre Megacentro Internacional de la Visión
         </div>
       </div>

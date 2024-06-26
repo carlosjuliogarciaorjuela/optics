@@ -38,7 +38,7 @@ const otherProducts = [
 
 const AllProducts = () => {
   return (
-    <div className="w-full flex justify-center px-4 py-8">
+    <div className="w-full flex justify-center px-4 py-2">
       <div className="grid w-full max-w-6xl gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
         {otherProducts.map((product, index) => (
           <div

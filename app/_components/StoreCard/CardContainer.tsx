@@ -9,7 +9,7 @@ const CardContainer: React.FC = () => {
       title: "Óptica Visión House",
       description:
         "Bienvenidos a Óptica Vision House, donde nuestra misión es ofrecer la mejor atención y calidad en productos ópticos.",
-      cardLink: "https://www.instagram.com/opticavisionhouseco/",
+      cardLink: "/VisionHouse",
     },
     {
       imageSrc: "/images/Cards/TecnoVisionTienda.png",

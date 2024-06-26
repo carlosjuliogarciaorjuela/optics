@@ -64,11 +64,12 @@
 // }
 import CarouselComponent from "./_components/Carousel/Carousel";
 import CardContainer from "@/app/_components/StoreCard/CardContainer";
-import Product from "./_components/Products/Product";
+
 import AllProducts from "./_components/Products/AllProducts";
 import VideoPlayer from "@/app/_components/VideoPlayer/VideoPlayer";
 import TabComponent from "@/app/_components/AboutUs/TabComponent";
 import OrderForm from "@/app/_components/OrderForm/OrderForm";
+import Gallery from "@/app/_components/Galley/Gallery";
 
 export default function Home() {
   return (
@@ -85,14 +86,16 @@ export default function Home() {
       <div className="w-full my-10 flex justify-center">
         <VideoPlayer videoSrc="https://www.youtube.com/embed/R6wcLvotbEI?si=8uC5R5cV2KLqyQM9" />
       </div>
+      <div className="w-full">
+        <Gallery />
+      </div>
       <div className="flex flex-col items-center w-full">
         <p className="text-3xl text-center mb-10 font-bold">
           Nuestros productos
         </p>
-        <Product />
         <AllProducts />
       </div>
-      <div className="w-full flex justify-center p-8">
+      <div className="w-full flex justify-center p-8 bg-PastelGreen">
         <OrderForm />
       </div>
     </div>
