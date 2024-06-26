@@ -54,6 +54,7 @@ const config = {
         },
         navyblue: "#0e2337",
         PastelGreen: "#67dd56",
+        DarkRoyalBlue: "#082aea",
       },
       borderRadius: {
         lg: "var(--radius)",
