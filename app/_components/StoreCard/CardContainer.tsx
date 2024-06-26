@@ -16,14 +16,14 @@ const CardContainer: React.FC = () => {
       title: "Óptica TecnoVisión",
       description:
         "Bienvenidos a Óptica TecnoVision, donde nuestra misión es ofrecer la mejor atención y calidad en productos ópticos.",
-      cardLink: "https://www.instagram.com/technovisionco/",
+      cardLink: "/TecnoVision",
     },
     {
       imageSrc: "/images/Cards/CityVisionTienda.png",
       title: "Óptica CityVisión",
       description:
         "Bienvenidos a Óptica CityVisión, donde nuestra misión es ofrecer la mejor atención y calidad en productos ópticos.",
-      cardLink: "https://www.instagram.com/cityvisionco/",
+      cardLink: "/CityVision",
     },
     {
       imageSrc: "/images/Cards/VisionHouseTienda.png",
@@ -58,7 +58,7 @@ const CardContainer: React.FC = () => {
           description={card.description}
           cardLink={card.cardLink}
           buttonText={
-            card.title === "Facebook" ? "Ver en Facebook" : "Ver en Instagram"
+            card.title === "Facebook" ? "Ver en Facebook" : "Ver Tienda"
           } // Condición para cambiar el texto del botón
         />
       ))}

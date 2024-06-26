@@ -73,7 +73,7 @@ const Header: React.FC = () => {
             <div className="flex flex-col mt-4 pl-2 font-medium lg:flex-row lg:space-x-3 lg:mt-0">
               <div>
                 <Link
-                  href="#"
+                  href="/" // Enlace que lleva al home
                   className="block py-2 pr-4 pl-3 text-white bg-primary-700 focus:ring-4 focus:ring-gray-300 rounded-lg lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
                   aria-current="page"
                 >

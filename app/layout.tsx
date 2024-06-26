@@ -1,7 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header/Header";
-import Foooter from "./_components/Footer/Footer";
+import Footer from "./_components/Footer/Footer";
+import CarouselComponent from "./_components/Carousel/Carousel"; // Importa el componente Carousel
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,8 +28,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
+        <CarouselComponent /> {/* Renderiza el CarouselComponent */}
         {children}
-        <Foooter />
+        <Footer />
       </body>
     </html>
   );

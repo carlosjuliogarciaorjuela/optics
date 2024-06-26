@@ -74,9 +74,6 @@ import Gallery from "@/app/_components/Galley/Gallery";
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
-      <div className="w-full p-0">
-        <CarouselComponent />
-      </div>
       <div className="w-full">
         <TabComponent />
       </div>
