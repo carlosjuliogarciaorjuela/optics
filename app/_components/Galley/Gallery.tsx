@@ -8,7 +8,11 @@ import Image from "next/image";
 const Gallery = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const images = ["/images/Gallery/ProductG.png"];
+  const images = [
+    "/images/Gallery/ProductG.png",
+    "/images/Gallery/BannerLenteAR.png",
+    "/images/Gallery/BannerLenteJA10.png",
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
