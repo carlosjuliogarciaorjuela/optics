@@ -83,7 +83,7 @@ export default function Home() {
       <div className="w-full my-10 flex justify-center">
         <VideoPlayer videoSrc="https://www.youtube.com/embed/R6wcLvotbEI?si=8uC5R5cV2KLqyQM9" />
       </div>
-      <div className="w-full">
+      <div className="w-full ">
         <Gallery />
       </div>
       <div className="flex flex-col items-center w-full">
