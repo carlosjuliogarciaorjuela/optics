@@ -26,7 +26,7 @@ const Gallery = () => {
       className="relative w-full"
       data-carousel="slide"
     >
-      <div className="relative object-cover h-52 sm:h-[22rem] md:h-[26rem] lg:h-[35rem] xl:h-[50rem] 2xl:h-[60rem] overflow-hidden">
+      <div className="relative object-cover h-52 sm:h-[22rem] md:h-[26rem] lg:h-[35rem] xl:h-[46rem] desktop:h-[50rem] 2xl:h-[55rem] overflow-hidden">
         {images.map((src, index) => (
           <div
             key={index}
