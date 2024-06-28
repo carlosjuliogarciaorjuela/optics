@@ -23,7 +23,7 @@ const TabComponent = () => {
           id="vision"
           role="tabpanel"
         >
-          <dl className="grid max-w-screen-xl grid-cols-2 gap-3 p-2 mx-auto text-black sm:grid-cols-3 xl:grid-cols-6 xl:h-80  dark:text-white sm:p-8">
+          <dl className="grid max-w-screen-xl grid-cols-2 gap-3 p-2 mx-auto text-black sm:grid-cols-3 xl:grid-cols-6 xl:h-40 dark:text-white sm:p-8">
             <div className="flex flex-col items-center justify-center">
               <dt className="mb-2 text-3xl font-extrabold">10+</dt>
               <dd className="text-black dark:text-gray-400">Especialistas</dd>
